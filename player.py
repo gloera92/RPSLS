@@ -39,16 +39,3 @@ class Player:
         else:
             return
 
-
-playerOne = Player()
-playerOne.player_gestures(playerOne.create_name())
-playerOne.gesture_selection(playerOne.player_gesture_choices())
-playerTwo = Player()
-playerTwo.player_gestures(playerTwo.create_name())
-playerTwo.gesture_selection(playerTwo.player_gesture_choices())
-playerResult = playerOne and playerTwo
-playerResult.game_play(playerOne, playerTwo)
-
-
-
-

@@ -3,11 +3,11 @@ from player import Player
 
 class Ai(Player):
     def __init__(self):
-        self.player = "Bob"
+        self.playerTwo = "Bob"
         super().__init__()
 
     def create_name(self):
-        print(f"Your opponents name is {self.player}")
+        print(f"Your opponents name is {self.playerTwo}")
 
     def player_gestures(self, name):
         self.player = "Bob"

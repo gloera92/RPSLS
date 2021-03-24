@@ -3,6 +3,6 @@ from player import Player
 
 class Human(Player):
     def __init__(self):
-        self.player = self.player
+        self.playerOne = Human
         super().__init__()
 
