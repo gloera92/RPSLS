@@ -8,7 +8,6 @@ class Game:
     def run_game(self):
         self.welcome_message()
         self.display_rules()
-        self.player.human_choice(self.player.human_gestures())
 
 
     def welcome_message(self):
@@ -16,3 +15,4 @@ class Game:
 
     def display_rules(self):
         print("Here are the Rules, choose your gesture wisely and guess what the opponent might pick!")
+
