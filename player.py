@@ -7,9 +7,13 @@ class Player:
         self.score = 0
         self.choice = ''
 
-    def player_gestures(self, name):
-        self.player = name
-        print(f'Select your gesture {self.player}:')
+    def create_name(self):
+        print("Please select a player name")
+        response = input()
+        return response
+
+    def player_gestures(self, player_name):
+        print(f'Select your gesture {player_name}:')
         print(f'Here are your gestures {self.gesture_list}')
 
     def player_gesture_choices(self):
@@ -30,11 +34,7 @@ class Player:
 
 
 playerOne = Player()
-playerOne.player_gestures("bob")
+playerOne.player_gestures(playerOne.create_name())
 playerOne.gesture_selection(playerOne.player_gesture_choices())
-playerTwo = Player()
-playerTwo.player_gestures("jim")
-playerTwo.gesture_selection(playerOne.player_gesture_choices())
-
 
 
